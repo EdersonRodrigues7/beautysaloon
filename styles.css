@@ -51,7 +51,7 @@ Body {
 }
 
 .title {
-  font: 700 1.875rem var(--title-font);
+  font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -804,9 +804,84 @@ footer .social a:hover {
 /*medium devices: 992> */
 
 @media (min-width: 992px) and (max-width: 1023px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size: 1.125rem;
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section header {
+    max-width: 20rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .image img {
+    right: 0;
+  }
+
+  #home .image::before {
+    width: 100%;
+    left: 16.8%;
+    top: -18%;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 16rem;
+    text-align: left;
+    margin-left: 0;
+    padding-right: 4rem;
+  }
+
+  #home a {
+    display: inline-block;
+    text-align: center;
   }
 }
 
