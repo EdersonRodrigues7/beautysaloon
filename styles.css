@@ -873,22 +873,65 @@ footer .social a:hover {
 
   #home .text {
     order: 0;
-    max-width: 16rem;
+    max-width: 14rem;
     text-align: left;
     margin-left: 0;
-    padding-right: 4rem;
   }
 
-  #home a {
+  #home a .button {
     display: inline-block;
     text-align: center;
+    padding: 0 1rem;
+  }
+
+  #about .image::before {
+    width: 100%;
+    height: 100%;
+    top: -19%;
+    left: -16%;
+  }
+
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+  #about .text {
+    max-width: 18rem;
+    text-align: center;
+  }
+
+  #services header {
+    max-width: 24rem;
+  }
+
+  #testimonials .container header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 18rem;
+  }
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 /*small devices: 767> Tablets*/
 @media (min-width: 767px) and (max-width: 991px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size: 1.125rem;
-  }
 }
