@@ -934,4 +934,30 @@ footer .social a:hover {
 
 /*small devices: 767> Tablets*/
 @media (min-width: 767px) and (max-width: 991px) {
+  .section {
+    padding: calc(2rem + var(--header-height)) 0;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .image img {
+    right: 0;
+  }
+
+  #home .image::before {
+    top: -10%;
+  }
+
+  #home .text {
+    order: 0;
+    margin-bottom: 4rem;
+  }
+
+  #about .text,
+  #services header,
+  #testimonials header {
+    text-align: center;
+  }
 }
