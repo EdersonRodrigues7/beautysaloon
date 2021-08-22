@@ -1,26 +1,3 @@
-/* Como Criar Objetos?
-
-Abrir par de chaves {} indica a criação de um objeto.
-O objeto sempre recebe ao menos uma propriedade e um valor. 
-O objeto pode ser atribuído a uma variável (ele se torna um valor).
-
-É possível inserir funções dentro dos objetos. As funções servem para agrupar uma sequência de códigos.
-
-A sintaxe de uma função é sempre um nome seguido de parêntesis (). Primeiro vem o nome da função e depois o seu argumento (o que ela faz?).
-
-Exemplo: const pessoa = {
-  name: 'Mayk',
-  age: 37,
-  falar: function (){
-    alert (pessoa.name)
-  }
-}
-pessoa.falar()
-*/
-
-//DOM = Document Object Model - "transforma" as tags html em objetos para o javascript
-// QuerySelector - procura os "seletores" dentro do html, o que pode incluir tags, classes, ID's
-
 // Abrir e fechar o menu quando clica no ícone
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
